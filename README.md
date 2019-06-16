@@ -6,9 +6,9 @@ One of the standing challenges in building an efficient algorithm for this task 
 
 ## Assumptions
 
->>In this method, we have assumed that the planogram image will cover enough field of view such that most of the pixels are corresponding to the background, that is, the non-object part.
+>In this method, we have assumed that the planogram image will cover enough field of view such that most of the pixels are corresponding to the background, that is, the non-object part.
 
->>The planogram image will not have vertical stacking of objects (or products). 
+>The planogram image will not have vertical stacking of objects (or products). 
 
 ## Method
  
