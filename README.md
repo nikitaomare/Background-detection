@@ -14,14 +14,13 @@ The planogram image will not have vertical stacking of objects (or products).
 Let the height of the planogram image be h pixels, and w be its width in pixels. We extract color-based features as well as SURF features and apply K-means clustering to detect the background portion of the image.
 
 
-
 ### Color-based features: 
 
 
 First, we divide the original planogram image into smaller squares of size k [(k pixels) x (k pixels)]. This gives us a total of n smaller squares, where [ n = (h // k) * (w // k) ]. Using those n square, we apply K-means clustering on the pixel color values across the three color channels (RGB) to get a total of n_clusters number of clusters. Finally, we create a plot of the clustered image by using the formula [ p[i] = (255 * i) / (n_clusters - 1) ]; given, number of clusters is always greater than 1. Here, p[i] represents the pixel intensity value of the ith cluster and i is a natural number in the closed range [1, n_clusters - 1]. We store the final plot values in color_map. The clustering is done such that the larger cluster receives lesser pixel value.  
 
 ### SURF features:
-
+![GitHub Logo](/images/logo.png)
 
 
 Similarly, we divide the original planogram image into smaller squares of size k_des, giving us n_des number of squares. We extract the SURF features for each smaller square and use the descriptor values to apply K-means clustering. We retrieve a n_cluster_des number of clusters and create a plot of the clustered image as we did before. We store the final plot values in color_map_des.
